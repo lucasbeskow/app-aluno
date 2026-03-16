@@ -1,0 +1,35 @@
+html,
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+aside{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    width: 50%;
+    background-color: #0f5830;
+    color: #ffffff;
+}
+
+aside > p{
+    display: block;
+    width: 80%;
+    font-size: 40px;
+    font-style: italic;
+}
+
+aside span{
+    display: block;
+    margin-top: 16px;
+    text-transform: uppercase;
+    font-style: normal;
+    font-size: 16px;
+}
