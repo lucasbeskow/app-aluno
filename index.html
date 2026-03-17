@@ -20,25 +20,32 @@
         </aside>
 
         <main>
-            <h1>Bem-vindo de volta</h1>
-            <p>Por favor, insira suas credenciais para acessar seu painel acadêmico</p>
+            <div class="cadastro">
+
+                <h1>Bem-vindo de volta</h1>
+                <p>Por favor, insira suas credenciais para acessar seu painel acadêmico</p>
 
 
-            <form action="/enviar" method="post">
+                <form action="/enviar" method="post">
 
-                <label for="email">Endereço de e-mail</label>
-                <input id="email" name="email" type="text" placeholder="user@email.com" />
+                    <label for="email">Endereço de e-mail</label>
+                    <input id="email" name="email" type="text" placeholder="user@email.com" />
 
-                <label>Senha</label>
-                <input type="password" />
+                    <label>
+                        Senha
+                        <a href="recuperar-senha.html">Esqueceu?</a>
+                    </label>
+                    <input type="password" />
 
-                <a href="recuperar-senha.html">Esqueceu?</a>
+                    
 
-                <button type="submit">Entrar</button>
+                    <button type="submit">Entrar</button>
 
-            </form>
+                </form>
 
-            <p>Não tem conta? <a href="/cadastro-usuario.html">Registre-se agora</a></p>
+                <p class="registro">Não tem conta? <a href="/cadastro-usuario.html">Registre-se agora</a></p>
+
+            </div>
         </main>
 
     </div>
