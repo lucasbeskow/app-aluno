@@ -1,33 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/styles.css" rel="stylesheet">
     <title>Recuperar senha</title>
 </head>
+
 <body>
 
-    <aside>
-        <p>
-            Educação não é aprendizado de fatos, mas o treinamento da mente para pensar.
-            <span>Albert Einstein</span>
-        </p>
-    </aside>
+    <div class="container">
 
-    <main>
-        <h1>Esqueceu a senha</h1>
-        <p>Informe seu e-mail para enviarmos um link para redefinir sua senha.</p>
+        <aside>
+            <p>
+                Educação não é aprendizado de fatos, mas o treinamento da mente para pensar.
+                <span>Albert Einstein</span>
+            </p>
+        </aside>
 
-         <form action="/enviar" method="post">
+        <main>
 
-            <label for="email">Endereço de e-mail</label>
-            <input id="email" name="email" type="text" placeholder="user@email.com" />
+            <div class="cadastro">
+                <h1>Esqueceu a senha</h1>
+                <p>Informe seu e-mail para enviarmos um link para redefinir sua senha.</p>
 
-            <button type="submit">Enviar</button>
+                <form action="/enviar" method="post">
 
-        </form>
+                    <label for="email">Endereço de e-mail</label>
+                    <input id="email" name="email" type="text" placeholder="user@email.com" />
 
-    </main>
-    
+                    <button type="submit">Enviar</button>
+
+                </form>
+            </div>
+
+
+        </main>
+
+    </div>
+
+
+
 </body>
+
 </html>
