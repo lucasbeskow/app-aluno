@@ -114,3 +114,120 @@ main{
 .registro {
     text-align: center;
 }
+
+.dashboard{
+    background-color: #ededed;
+}
+
+.dashboard__body{
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+header{
+    background-color: #ffffff;
+}
+
+.dashboard__header{
+    display: flex;
+    align-items: center;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.dashboard__title{
+    font-size: 16px;
+    color: #0f5830;
+}
+.dashboard__title span{
+    display: block;
+    font-size: 12px;
+    color: #cccccc;
+}
+
+.dashboard__menu{
+    margin-left: auto;
+}
+
+.dashboard__menu a{
+    display: inline-block;
+    margin: 0 8px;
+    color: #0f5830;
+    text-decoration: none;
+}
+
+.dashboard__menu a:hover{
+    text-decoration: underline;
+}
+
+.dashboard__hero{
+    font-size: 14px;
+    color: #999999;
+}
+
+.dashboard__hero h2{
+    margin-bottom: 0px;
+    font-size: 32px;
+    color: #0f5830;
+}
+
+.card{
+    display: flex;
+    padding: 24px;
+    margin: 16px 0;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+}
+
+.card__body{
+    margin-right: auto;
+}
+
+.card__badge{
+    display: inline-block;
+    padding: 4px 8px;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #0f5830;
+    background-color: #cccccc;
+}
+
+.card__title{
+    margin: 8px 0;
+    font-size: 18px;
+    color: #0f5830;
+}
+
+.card p{
+    font-size: 14px;
+    color: #999999;
+}
+
+.card__progress{
+    height: 12px;
+    border-radius: 8px;
+    background-color: #cccccc;
+}
+
+.card__progress div{
+    width: 65%;
+    height: 12px;
+    font-size: 9px;
+    color: #ffffff;
+    text-align: right;
+    border-radius: 8px;
+    background-color: #0f5830;
+}
+
+.card__button{
+    display: inline-block;
+    height: 32px;
+    margin: 24px 0 18px 0;
+    padding: 4px;
+    background-color: #0f5830;
+    border-width: none;
+    border-style: solid;
+    border-color: transparent;
+    color: #ffffff;
+    text-align: center;
+}
