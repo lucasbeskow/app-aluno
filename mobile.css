@@ -1,0 +1,14 @@
+@media (max-width: 768px){
+    aside{
+        display: none;
+    }
+
+    main,
+    .cadastro{
+        width: 100%;
+    }
+
+    main{
+        padding: 0 16px;
+    }
+}
