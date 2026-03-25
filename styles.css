@@ -181,6 +181,7 @@ header{
     margin: 16px 0;
     background-color: #ffffff;
     border: 1px solid #cccccc;
+    box-sizing: border-box;
 }
 
 .card__group{
