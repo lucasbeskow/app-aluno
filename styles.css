@@ -122,6 +122,7 @@ main{
 .dashboard__body{
     max-width: 960px;
     margin: 0 auto;
+    padding: 0 40px;
 }
 
 header{
@@ -133,12 +134,14 @@ header{
     align-items: center;
     max-width: 960px;
     margin: 0 auto;
+    padding: 0 40px;
 }
 
 .dashboard__title{
     font-size: 16px;
     color: #0f5830;
 }
+
 .dashboard__title span{
     display: block;
     font-size: 12px;
@@ -161,6 +164,7 @@ header{
 }
 
 .dashboard__hero{
+    margin: 40px 0;
     font-size: 14px;
     color: #999999;
 }
@@ -179,8 +183,19 @@ header{
     border: 1px solid #cccccc;
 }
 
+.card__group{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
 .card__body{
+    width: 60%;
     margin-right: auto;
+}
+
+.card__footer{
+    align-self: center;
 }
 
 .card__badge{
@@ -210,7 +225,6 @@ header{
 }
 
 .card__progress div{
-    width: 65%;
     height: 12px;
     font-size: 9px;
     color: #ffffff;
@@ -221,13 +235,26 @@ header{
 
 .card__button{
     display: inline-block;
-    height: 32px;
-    margin: 24px 0 18px 0;
-    padding: 4px;
+    padding: 8px 16px;
     background-color: #0f5830;
     border-width: none;
     border-style: solid;
     border-color: transparent;
     color: #ffffff;
     text-align: center;
+}
+
+.card--33{
+    width: 33%;
+}
+
+.card--33 .card__body{
+    width: 100%;
+}
+
+.card__badge--title{
+    padding: 0;
+    text-transform: none;
+    color: #333333;
+    background-color: transparent;
 }
