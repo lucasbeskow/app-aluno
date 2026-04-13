@@ -103,15 +103,17 @@ fetch('https://jsonplaceholder.typicode.com/posts/1')
 */
 
 
-// const url = 'https://jsonplaceholder.typicode.com/posts/2';
+const url = 'https://jsonplaceholder.typicode.com/posts/2';
 
-// async function buscarDados() {
-//     const resposta = await fetch(url);
-//     const dados = await resposta.json();
-//     console.log(dados);
-// }
+async function buscarDados() {
+    const resposta = await fetch(url);
+    const dados = await resposta.json();
+    return dados.title;
+}
 
-// buscarDados();
+buscarDados().then(title => {
+    console.log(title)
+});
 
 /*
 // Notification
