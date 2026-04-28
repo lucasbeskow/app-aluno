@@ -26,6 +26,7 @@
         
         <div class="dashboard__hero">
             <h2 id="greeting">Boa noite, João</h2>
+            <p id="data-atual"></p>
             <p>Bem-vindo de volta a sua sessão de estudos focado. Você em duas tarefas para esta semana e esta atualmente adiantado ao seu cronograma de leitura.</p>
         </div>
         
@@ -70,7 +71,7 @@
                 <div class="card__body">
                     <span class="card__badge card__badge--title">Tarefas pendentes</span>
                     <h3 id="tarefas" class="card__title">2</h3>
-                    <p>Próximo vencimento em 2 dias</p>
+                    <p id="vencimento"></p>
                 </div>
             </div>
             
@@ -85,6 +86,9 @@
 
         
     </div>
+
+    <script src="/node_modules/moment/moment.js"></script>
+    <script src="/node_modules/moment/locale/pt-br.js"></script>
 
     <script src="/scripts.js"></script>
 

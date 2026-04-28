@@ -21,6 +21,36 @@ function getMsg(){
 const greeting = document.getElementById('greeting');
 greeting.textContent = `${getMsg()}, ${pessoa.nome}`;
 
+/*
+ Exibindo a data atual com moment.js
+*/
+moment.locale('pt-br');
+const dataAtual = document.getElementById('data-atual');
+dataAtual.textContent = moment().format('dddd, D [de] MMMM [de] YYYY');
+
+/*
+ Contagem de vencimento com moment.js
+*/
+
+// Define a data de vencimento da tarefa
+const dataVencimento = moment().add(5, 'days'); // tarefa vence daqui 5 dias
+//const dataVencimento = moment().subtract(5, 'days'); // tarefa venceu daqui 5 dias
+
+// Calcula a diferença entre hoje e o vencimento
+const diasRestantes = dataVencimento.diff(moment(), 'days');
+const vencido = diasRestantes < 0;
+
+const vencimentoEl = document.getElementById('vencimento');
+
+if (vencido) {
+    // Mostra há quantos dias está vencido (fromNow retorna ex: "há 3 dias")
+    vencimentoEl.textContent = `Venceu ${dataVencimento.fromNow()}`;
+    vencimentoEl.style.color = 'red';
+} else {
+    // Mostra quanto tempo falta (to retorna ex: "em 5 dias")
+    vencimentoEl.textContent = `Próximo vencimento ${dataVencimento.fromNow()}`;
+}
+
 
 /*
  Banners indicadores (Fácil)
